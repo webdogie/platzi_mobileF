@@ -40,22 +40,75 @@
             <p class="main-currency-container__title">Monedas</p>
             <div class="main-currency-container__grid">
               <div class="main-currency-container__grid--child">Bitcoin</div>
-              <div class="main-currency-container__grid--child">$ 1.96 <span class="down"></span></div>
+              <div class="main-currency-container__grid--child">
+                $ 1.96 <span class="down"></span>
+              </div>
               <div class="main-currency-container__grid--child">Ethereum</div>
-              <div class="main-currency-container__grid--child">$ 0.07 <span class="up"></span></div>
+              <div class="main-currency-container__grid--child">
+                $ 0.07 <span class="up"></span>
+              </div>
               <div class="main-currency-container__grid--child">Ripple</div>
-              <div class="main-currency-container__grid--child">$ 2.15 <span class="down"> </span></div>
+              <div class="main-currency-container__grid--child">
+                $ 2.15 <span class="down"> </span>
+              </div>
               <div class="main-currency-container__grid--child">Stellar</div>
-              <div class="main-currency-container__grid--child">$ 4.96 <span class="down"></span></div>
+              <div class="main-currency-container__grid--child">
+                $ 4.96 <span class="down"></span>
+              </div>
             </div>
             <div class="main-currency-container__update">
               <p>
-                Actualizado el:
+                <b>Actualizado</b>
                 <script>
-                  document.write(new Date().toLocaleString());
+                  const monthNames = [
+                    "Enero",
+                    "febrero",
+                    "Marzo",
+                    "Abril",
+                    "Mayo",
+                    "Junio",
+                    "Julio",
+                    "Agosto",
+                    "Septiembre",
+                    "Octubre",
+                    "Noviembre",
+                    "Diciembre",
+                  ];
+
+                  document.write(
+                    `el ${new Date().getDate()} de ${
+                      monthNames[new Date().getMonth()]
+                    }`
+                  );
                 </script>
               </p>
             </div>
+          </div>
+          <div class="sec-currency-container">
+            <p class="sec-currency-container__title">Comisiones</p>
+            <div class="sec-currency-container__grid">
+              <div class="sec-currency-container__grid--child">Bitrade</div>
+              <div class="sec-currency-container__grid--child">$ 12.96</div>
+              <div class="sec-currency-container__grid--child">Bitpreco</div>
+              <div class="sec-currency-container__grid--child">$ 13.07</div>
+              <div class="sec-currency-container__grid--child">Novadax</div>
+              <div class="sec-currency-container__grid--child">$ 13.15</div>
+              <div class="sec-currency-container__grid--child">Coinext</div>
+              <div class="sec-currency-container__grid--child">$ 14.96</div>
+            </div>
+            <div class="sec-currency-container__update">
+              <p>
+                <b>Actualizado</b>
+                <script>
+                  document.write(
+                    `el ${new Date().getDate()} de ${
+                      monthNames[new Date().getMonth()]
+                    }`
+                  );
+                </script>
+              </p>
+            </div>
+          </div>
         </section>
       </section>
       <section class="section_2"></section>
