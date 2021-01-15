@@ -194,8 +194,18 @@ main {
   color: #757575;
 }
 
+.currency-section {
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 0 30px;
+}
+
 .main-currency-container,
 .sec-currency-container {
+  position: relative;
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
@@ -205,7 +215,6 @@ main {
 }
 
 .main-currency-container .main-currency-container__title {
-  width: 90px;
   margin: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -214,7 +223,6 @@ main {
 }
 
 .sec-currency-container .sec-currency-container__title {
-  width: 90px;
   margin: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -325,8 +333,6 @@ main {
 }
 
 .sec-currency-container__title {
-  display: flex;
-  align-self: flex-start;
   color: var(--secondary-blue);
 }
 
